@@ -1,0 +1,99 @@
+/* src/App.css */
+.app-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  background: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 0.5em 0 0.2em;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #242424;
+  color: #fff;
+  font-size: 1em;
+}
+
+.input-field:focus {
+  border-color: #646cff;
+  outline: none;
+}
+
+.download-button {
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  font-weight: 600;
+  background-color: #646cff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.download-button:hover {
+  background-color: #535bf2;
+}
+
+.download-button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.progress-container {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  margin-top: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.success {
+  background-color: #1a4a1a;
+  color: #4caf50;
+}
+
+.error {
+  background-color: #4a1a1a;
+  color: #f44336;
+}
+
+.footer {
+  font-size: 0.9em;
+  color: #888;
+}

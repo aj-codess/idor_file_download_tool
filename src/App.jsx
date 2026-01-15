@@ -34,13 +34,15 @@ function App() {
       });
 
       // Create a blob URL and trigger download
-      const blob = new Blob([response.data]);
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = fileUrl.split('/').pop() || 'downloaded-file'; // Use filename from URL or default
-      document.body.appendChild(link);
-      link.click();
+   const url = window.URL.createObjectURL(new Blob([response.data]));
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.setAttribute("download", "idor_file.pdf");
+    document.body.appendChild(link);
+    link.click();
+
+      //cleanup
       link.remove();
       window.URL.revokeObjectURL(url);
 
